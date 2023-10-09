@@ -7,6 +7,9 @@
 }
 
 :root {
+    --background-color: #32264b;
+    --heading-text-color: #ffffff;
+    --description-text-color: #e1dde8;
     scroll-behavior: smooth;
     font-family: 'Dangrek', cursive;
 }
@@ -19,4 +22,57 @@ img {
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+.blog {
+    background-color: #32264b;
+
+} 
+
+.blog__title {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.blog__name {
+    font-weight: bold;
+    font-size: 37.4px;
+    text-align: center;
+}
+
+.blog__description {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.articles .blog__articles {
+    border: 1px solid var(--description-text-color);
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (min-width: 320px) {
+    .blog__articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .blog__articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 993px) {
+    .blog__articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
 }
